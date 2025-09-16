@@ -1,0 +1,251 @@
+.success {
+    background-color: var(--dark-green-color);
+}
+
+.success__wrapper {
+    padding: 220px 0 248px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 16px;
+}
+
+.success__content {
+    max-width: 580px;
+    height: 350px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+
+}
+
+.success__title {
+    margin: 0 0 19px 0;
+    color: var(--bg-color);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 157%; /* 78.5px */
+}
+
+.success__description {
+    margin: 0 0 80px 0;
+    color: var(--bg-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 157%; /* 39.25px */
+}
+
+.success__btn {
+    width: 240px;
+    height: 65px;
+    padding: 20px 50px;
+    color: var(--bg-color);
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.success__content--two {
+    max-width: 790px;
+    max-height: 455px;
+}
+
+.success__img {
+    max-width: 790px;
+    max-height: 455px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: auto 158/91;
+}
+
+.success__icon {
+    position: absolute;
+    z-index: 9999;
+    width: 72px;
+    height: 73px;
+    fill: #ffffff;
+    top: 42%;
+    left: 47%
+}
+.success__icon:hover {
+    fill: var(--light-green-color);
+    
+}
+
+
+@media (max-width: 1130px) {
+    .success__title {
+    margin: 0 0 5px 0;
+    font-size: 40px;
+    }
+
+    .success__description {
+        margin: 0 0 40px 0;
+        font-size: 16px;
+    }
+
+    .success__btn {
+        width: 240px;
+        height: 65px;
+        padding: 15px 35px;
+        color: var(--bg-color);
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .success__wrapper {
+    padding: 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+        place-items: end;
+
+    gap: 0px;
+    }
+    
+    .success__content {
+        max-width: 300px;
+    height: 350px;
+    margin: 10px 50px 20px 0 ;
+    display: flex;
+    flex-direction: column;
+    place-items: end;
+        text-align: end;
+
+
+    }
+
+    .success__title {
+        max-width: 300px;
+        max-height: auto;
+    margin: 0 0 20px 0;
+    color: var(--bg-color);
+    font-size: 40px;
+}
+
+.success__btn {
+        width: 260px;
+        height: 65px;
+        padding: 15px 35px;
+        color: var(--bg-color);
+        font-size: 18px;
+    }
+    .success__img {
+        display: flex;
+        align-items: center;
+    max-width: 690px;
+    height: 455px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.success__icon {
+    position: absolute;
+    z-index: 9999;
+    width: 72px;
+    height: 73px;
+    fill: #ffffff;
+    
+}
+    
+} 
+
+
+
+@media (max-width: 710px) {
+    .success__wrapper {
+    padding: 60px 0;
+    }
+    
+    .success__content {
+    margin: 20px 50px 30px 0 ;
+    text-align: end;
+    }
+
+
+    .success__btn {
+            width: 250px;
+        }
+        .success__img {
+        max-width: 490px;
+        max-height: 305px;
+    
+    }
+    
+}
+
+@media (max-width: 510px) {
+    .success__wrapper {
+    padding: 60px 0;
+    }
+    
+    .success__content {
+    margin: 20px 50px 30px 0 ;
+    text-align: end;
+    }
+
+
+    .success__btn {
+        width: 180px;
+    }
+
+        .success__img {
+        width: 390px;
+        height: 280px;
+    
+    }
+
+    .success__icon {
+        top: 38%;
+        left: 42%
+    }
+      
+} 
+
+
+@media (max-width: 410px) {
+    .success__wrapper {
+        padding: 40px 0;
+        place-items: center;
+        gap: 20px;
+        }
+    
+    .success__content {
+        max-width: 300px;
+        height: auto;
+        margin: 10px 0px 20px 0 ;
+        place-items: center;
+        margin: 10px 50px 10px 0 ;
+        text-align: start;
+
+    }
+
+    .success__title {
+        margin: 0 0 10px 0;
+        font-size: 25px;
+    }
+
+    .success__description {
+        margin: 0 0 20px 0;
+        font-size: 14px;
+    }
+
+    .success__btn {
+        width: 250px;
+    }
+
+    .success__img {
+        width: 290px;
+        height: 200px;
+    }
+
+    .success__icon {
+        top: 33%;
+        left: 40%
+    }
+      
+}
+
