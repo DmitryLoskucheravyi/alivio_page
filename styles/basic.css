@@ -49,6 +49,6 @@ a {
 
 .btn:hover,
 .btn:focus-visible {
-    opacity: .8;
+    opacity: .7;
     outline: 2px solid var(--dark-green-color);
 }
