@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
@@ -48,8 +49,28 @@
         </div>
     </header>
 
+        <div class="mobile-navigation">
+        <label for="toggler">
+            <img src="assets/burger.png" alt="" class="burger-nav">
+        </label>
+        <input type="checkbox" id="toggler" class="mobile-nav-toggler">
+
+        <nav class="mobile-nav-menu">
+                <ul class="mobile-nav-list">
+                    <li><a href="#home" class="mobile-nav-link" data-link-mobile>Home</a></li>
+                    <li><a href="#HowItWorks" class="mobile-nav-link" data-link-mobile>How it works</a></li>
+                    <li><a href="#users" class="mobile-nav-link" data-link-mobile>Users</a></li>
+                    <li><a href="#OurProduct" class="mobile-nav-link" data-link-mobile>Our product</a></li>
+                    <li><a href="#About" class="mobile-nav-link" data-link-mobile>About</a></li>
+                </ul>
+                <label for="toggler">
+                    <img src="assets/close.png" alt="" class="close-nav">
+                </label>
+        </nav>
+    </div>
+    
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__title">Be aware, Manage well.</h1>
@@ -60,7 +81,7 @@
         </section>
 
 
-        <section class="about">
+        <section id="HowItWorks" class="about">
             <div class="container">
                 <h3 class="about__subtitle">How it works</h3>
                     <div class="about__content">
@@ -92,7 +113,7 @@
     </main>
 
 
-        <section class="success">
+        <section id="users" class="success">
             <div class="container">
                 <div class="success__wrapper">
                     <div class="success__content">
@@ -117,7 +138,7 @@
         </section>
 
         
-        <section class="product">
+        <section id="OurProduct" class="product">
             <div class="container">
                 <div class="product__wrapper">
                     <div class="product__card">
@@ -144,7 +165,7 @@
         </section>
 
 
-        <footer class="footer">
+        <footer id="About" class="footer">
             <div class="container">
                     <h3 class="footer__title">Alivio</h3>
                 <div class="footer_wrapper">
@@ -156,5 +177,15 @@
             </div>
         </footer>
 
+
+            <script>
+            const links = document.querySelectorAll("[data-link-mobile]");
+
+            links.forEach(link => {
+                    link.addEventListener("click", () => {
+                    document.getElementById('toggler').checked = false;
+                });
+            });
+        </script>
 </body>
 </html>

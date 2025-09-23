@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,6 +10,7 @@ body {
     margin: 0;
     font-family: var(--font-lato);
     background-color: var(--bg-color);
+
 }
 ul {
     list-style: none;
